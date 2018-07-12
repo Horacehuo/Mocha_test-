@@ -1,0 +1,26 @@
+  isCollision: function(x, y) {
+    if (x < snake.size / 2 ||
+        x > canvas.width ||
+        y < snake.size / 2 ||
+        y > canvas.height ||
+        snake.sections.indexOf(x + ',' + y) >= 0) {
+      return true;
+    }
+  },
+  
+  function snake(a,b){ var canvas_width=400;
+  var canvas_height=400;
+   var snake_size=canvas_width/40;
+   sections=[];
+   x=canvas_width/2+snake_size/2;
+   y=canvas_width/2+snake_size/2;
+   for(var i=x+(5*snake_size); i>=x; i-=snake_size){
+      sections.push(i+','+y)
+    };
+    sections.push(210,230)
+      if (a<snake_size/2 || a>canvas_width || b<snake_size/2 || b>canvas_height
+    || sections.indexOf(a+','+b)>=0  ) {
+     return true ; }
+    };
+
+   module.exports=snake;

@@ -1,0 +1,32 @@
+var snake=require('./app.js');
+var assert= require('assert');
+var expect=require('chai').expect;
+
+describe('snake function',function(){
+ it('snake function should not return true when enter 300,350', function(){
+ expect(snake(300,350)).to.not.be.ok;
+});
+});
+
+describe('snake function',function(){
+ it('snake function should  return true when enter 2,350', function(){
+ expect(snake(2,350)).to.be.ok;
+});
+});
+
+describe('snake function',function(){
+ it('snake function should  return true when enter 300,0', function(){
+ expect(snake(300,0)).to.be.ok;
+});
+});
+
+describe('snake function',function(){
+ it('snake function should  return true when enter 2,0', function(){
+ expect(snake(2,0)).to.be.ok;
+});
+});
+describe('snake function',function(){
+ it('snake function should  return true when enter -100,0', function(){
+ expect(snake(-100,0)).to.be.ok;
+});
+});
